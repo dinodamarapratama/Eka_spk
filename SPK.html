@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<!--//webfont-->
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+	new WOW().init();
+</script>
+
+<script type="text/javascript"src="js/lodash.min.js"></script>
+<script src="js/jquery.bootpag.min.js"></script>
+<link href="css/font-awesome.css" rel="stylesheet" /> 
+<style>
+
+label.btn span {
+  font-size: 17px ;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;    display: inline;
+	font-size: 20px;
+}
+label input[type="radio"] ~ i.fa.fa-check-circle-o{
+    display: none;
+	font-size: 20px;
+}
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+	font-size: 20px;
+}
+label input[type="radio"]:checked ~ i.fa.fa-check-circle-o{
+    color: #7AA3CC;    display: inline;
+	font-size: 20px;
+}
+label:hover input[type="radio"] ~ i.fa {
+color: #7AA3CC;
+}
+
+
+
+div[data-toggle="buttons"] label.active{
+    color: #000;
+}
+
+div[data-toggle="buttons"] label {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 2em;
+text-align: left;
+white-space: nowrap;
+vertical-align: top;
+cursor: pointer;
+background-color: none;
+border: 0px solid 
+#c8c8c8;
+border-radius: 3px;
+color: #000;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+div[data-toggle="buttons"] label:hover {
+color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+
+
+</style>
+<script>
+   
+ var input = [];
+ var plat1 = 0;
+ var plat2 = 0;
+ var plat3 = 0;
+ var plat4 = 0;
+ var plat5 = 0;
+ var plat6 = 0;
+ var plat7 = 0;
+ var plat8 = 0;
+ var plat9 = 0;
+ var plat10 = 0;
+ var plat11 = 0;
+ var plat12 = 0;
+ var plat13 = 0;
+ var plat14 = 0;
+ var plat15 = 0;
+ var plat16 = 0;
+ var plat17 = 0;
+ var plat18 = 0;
+ var plat19 = 0;
+ var plat20 = 0;
+ var plat21 = 0;
+ var plat22 = 0;
+ var plat23 = 0;
+ var plat24 = 0;
+ var plat25 = 0;
+ var plat26 = 0;
+ var plat27 = 0;
+ var plat28 = 0;
+ var plat29 = 0;
+ var plat30 = 0;
+ var plat31 = 0;
+ var plat32 = 0;
+ var plat33 = 0;
+ var plat34 = 0;
+ var plat35 = 0;
+ var plat36 = 0;
+ var plat37 = 0;
+ var plat38 = 0;
+ 
+	
+    function test_plat() {
+	
+	if($('[name="plat1"]:checked').val() == 1 ) { plat1 = 1 }
+	if($('[name="plat1"]:checked').val() == 2 ) { plat1 = 99 }
+	
+	if($('[name="plat2"]:checked').val() == 1 ) { plat2 = 1 }
+	if($('[name="plat2"]:checked').val() == 2 ) { plat2 = 2 }
+	if($('[name="plat2"]:checked').val() == 3 ) { plat2 = 3 }
+	
+	if($('[name="plat3"]:checked').val() == 1 ) { plat3 = 1 }
+	if($('[name="plat3"]:checked').val() == 2 ) { plat3 = 2 }
+	if($('[name="plat3"]:checked').val() == 3 ) { plat3 = 3 }
+	
+	if($('[name="plat4"]:checked').val() == 1 ) { plat4 = 1 }
+	if($('[name="plat4"]:checked').val() == 2 ) { plat4 = 2 }
+	if($('[name="plat4"]:checked').val() == 3 ) { plat4 = 3 }
+	
+	if($('[name="plat5"]:checked').val() == 1 ) { plat5 = 1 }
+	if($('[name="plat5"]:checked').val() == 2 ) { plat5 = 2 }
+	if($('[name="plat5"]:checked').val() == 3 ) { plat5 = 3 }
+	
+	if($('[name="plat6"]:checked').val() == 1 ) { plat6 = 1 }
+	if($('[name="plat6"]:checked').val() == 2 ) { plat6 = 2 }
+	if($('[name="plat6"]:checked').val() == 3 ) { plat6 = 3 }
+	
+	if($('[name="plat7"]:checked').val() == 1 ) { plat7 = 1 }
+	if($('[name="plat7"]:checked').val() == 2 ) { plat7 = 2 }
+	if($('[name="plat7"]:checked').val() == 3 ) { plat7 = 3 }
+	
+	if($('[name="plat8"]:checked').val() == 1 ) { plat8 = 1 }
+	if($('[name="plat8"]:checked').val() == 2 ) { plat8 = 2 }
+	if($('[name="plat8"]:checked').val() == 3 ) { plat8 = 3 }
+	
+	if($('[name="plat9"]:checked').val() == 1 ) { plat9 = 1 }
+	if($('[name="plat9"]:checked').val() == 2 ) { plat9 = 2 }
+	if($('[name="plat9"]:checked').val() == 3 ) { plat9 = 3 }
+
+	if($('[name="plat10"]:checked').val() == 1 ) { plat10 = 1 }
+	if($('[name="plat10"]:checked').val() == 4 ) { plat10 = 99 }
+	
+	if($('[name="plat11"]:checked').val() == 1 ) { plat11 = 1 }
+	if($('[name="plat11"]:checked').val() == 4 ) { plat11 = 99 }
+	
+	if($('[name="plat12"]:checked').val() == 1 ) { plat12 = 1 }
+	if($('[name="plat12"]:checked').val() == 4 ) { plat12 = 99 }
+	
+	if($('[name="plat13"]:checked').val() == 1 ) { plat13 = 1 }
+	if($('[name="plat13"]:checked').val() == 4 ) { plat13 = 99 }
+	
+	if($('[name="plat14"]:checked').val() == 1 ) { plat14 = 1 }
+	if($('[name="plat14"]:checked').val() == 4 ) { plat14 = 99 }
+	
+	if($('[name="plat15"]:checked').val() == 1 ) { plat15 = 1 }
+	if($('[name="plat15"]:checked').val() == 4 ) { plat15 = 99 }
+	
+	if($('[name="plat16"]:checked').val() == 1 ) { plat16 = 1 }
+	if($('[name="plat16"]:checked').val() == 4 ) { plat16 = 99 }
+	
+	if($('[name="plat17"]:checked').val() == 1 ) { plat17 = 1 }
+	if($('[name="plat17"]:checked').val() == 4 ) { plat17 = 99 }
+	
+	if($('[name="plat18"]:checked').val() == 1 ) { plat18 = 1 }
+	if($('[name="plat18"]:checked').val() == 2 ) { plat18 = 2 }
+	if($('[name="plat18"]:checked').val() == 3 ) { plat18 = 3 }
+	
+	if($('[name="plat19"]:checked').val() == 1 ) { plat19 = 1 }
+	if($('[name="plat19"]:checked').val() == 2 ) { plat19 = 2 }
+	if($('[name="plat19"]:checked').val() == 3 ) { plat19 = 3 }
+	
+	if($('[name="plat20"]:checked').val() == 1 ) { plat20 = 1 }
+	if($('[name="plat20"]:checked').val() == 2 ) { plat20 = 2 }
+	if($('[name="plat20"]:checked').val() == 3 ) { plat20 = 3 }
+	
+	if($('[name="plat21"]:checked').val() == 1 ) { plat21 = 1 }
+	if($('[name="plat21"]:checked').val() == 2 ) { plat21 = 2 }
+	if($('[name="plat21"]:checked').val() == 3 ) { plat21= 3 }
+	
+	if($('[name="plat22"]:checked').val() == 1 ) { plat22 = 1 }
+	if($('[name="plat22"]:checked').val() == 5 ) { plat22 = 5 }
+	if($('[name="plat22"]:checked').val() == 7 ) { plat22 = 7 }
+	
+	if($('[name="plat23"]:checked').val() == 1 ) { plat23 = 1 }
+	if($('[name="plat23"]:checked').val() == 5 ) { plat23 = 5 }
+	if($('[name="plat23"]:checked').val() == 7 ) { plat23 = 7 }
+	
+	if($('[name="plat24"]:checked').val() == 1 ) { plat24 = 1 }
+	if($('[name="plat24"]:checked').val() == 5 ) { plat24 = 5 }
+	if($('[name="plat24"]:checked').val() == 7 ) { plat24 = 7 }
+	
+	if($('[name="plat25"]:checked').val() == 1 ) { plat25 = 1 }
+	if($('[name="plat25"]:checked').val() == 5 ) { plat25 = 5 }
+	if($('[name="plat25"]:checked').val() == 7 ) { plat25 = 7 }
+	
+	if($('[name="plat26"]:checked').val() == 1 ) { plat26 = 1 }
+	if($('[name="plat26"]:checked').val() == 5 ) { plat26 = 5 }
+	if($('[name="plat26"]:checked').val() == 8 ) { plat26 = 8 }
+	
+	if($('[name="plat27"]:checked').val() == 1 ) { plat27 = 1 }
+	if($('[name="plat27"]:checked').val() == 5 ) { plat27 = 5 }
+	if($('[name="plat27"]:checked').val() == 8 ) { plat27 = 8 }
+	
+	if($('[name="plat28"]:checked').val() == 1 ) { plat28 = 1 }
+	if($('[name="plat28"]:checked').val() == 2 ) { plat28 = 2 }
+
+	if($('[name="plat29"]:checked').val() == 1 ) { plat29 = 1 }
+	if($('[name="plat29"]:checked').val() == 2 ) { plat29 = 2 }
+	
+	if($('[name="plat30"]:checked').val() == 1 ) { plat30 = 1 }
+	if($('[name="plat30"]:checked').val() == 4 ) { plat30 = 4 }
+	
+	if($('[name="plat31"]:checked').val() == 1 ) { plat31 = 1 }
+	if($('[name="plat31"]:checked').val() == 4 ) { plat31 = 4 }
+	
+	if($('[name="plat32"]:checked').val() == 1 ) { plat32 = 1 }
+	if($('[name="plat32"]:checked').val() == 4 ) { plat32 = 4 }
+	
+	if($('[name="plat33"]:checked').val() == 1 ) { plat33 = 1 }
+	if($('[name="plat33"]:checked').val() == 4 ) { plat33 = 4 }
+	
+	if($('[name="plat34"]:checked').val() == 1 ) { plat34 = 1 }
+	if($('[name="plat34"]:checked').val() == 2 ) { plat34 = 2 }
+	if($('[name="plat34"]:checked').val() == 3 ) { plat34 = 3 }
+	
+	if($('[name="plat35"]:checked').val() == 1 ) { plat35 = 1 }
+	if($('[name="plat35"]:checked').val() == 2 ) { plat35 = 2 }
+	if($('[name="plat35"]:checked').val() == 3 ) { plat35 = 3 }
+	
+	if($('[name="plat36"]:checked').val() == 1 ) { plat36 = 1 }
+	if($('[name="plat36"]:checked').val() == 2 ) { plat36 = 2 }
+	if($('[name="plat36"]:checked').val() == 3 ) { plat36 = 3 }
+	
+	if($('[name="plat37"]:checked').val() == 1 ) { plat37 = 1 }
+	if($('[name="plat37"]:checked').val() == 2 ) { plat37 = 2 }
+	if($('[name="plat37"]:checked').val() == 3 ) { plat37 = 3 }
+	
+	if($('[name="plat38"]:checked').val() == 1 ) { plat38 = 1 }
+	if($('[name="plat38"]:checked').val() == 2 ) { plat38 = 2 }
+	if($('[name="plat38"]:checked').val() == 3 ) { plat38 = 3 }
+	
+	}
+	
+	
+	function hasil() {
+	input = [];
+    input.push(plat1,plat2,plat3,plat4,plat5,plat6,plat7,plat8,plat9,plat10,plat11,plat12,plat13,plat14,plat15,plat16,plat17,plat18,plat19,plat20,plat21,plat22,plat23,plat24,plat25,plat26,plat27,plat28,plat29,plat30,plat31,plat32,plat33,plat34,plat35,plat36,plat37,plat38);
+	console.log(input);
+	var value = (_.chain(input).countBy().pairs().max(_.last).value()[0]);
+	console.log(value);	 
+		 
+		 var box = document.getElementById('box');
+         box.style.display = (box.style.display != 'none') ? 'visible' : '';
+		  
+		if (value == 0) {
+            document.getElementById('hasil').innerHTML = "Ulangi, kamu belum mengisi jawaban test seluruhnya ";
+        };
+        if (value == 1) {
+            document.getElementById('hasil').innerHTML = "Mata kamu normal";
+        };
+        if (value == 2) {
+            document.getElementById('hasil').innerHTML = "Kamu mengalami gangguan buta warna merah hijau";
+        };
+		if (value == 3) {
+            document.getElementById('hasil').innerHTML = "Kamu mengalami gangguan buta warna total";
+        };
+		 
+		input = [];
+		
+
+   }
+ 			
+          
+	
+
+</script>
+<style>
+.button {
+  float:right;
+  padding: 1em 3em;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-appearance: none;
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  background:#4e69a2;
+  border:none;
+  outline:none;
+  box-shadow: inset 0px -2px 11px #899bc1;
+  -webkit-box-shadow: inset 0px -2px 11px #899bc1;
+  -o-box-shadow: inset 0px -2px 11px #899bc1;
+  -moz-box-shadow: inset 0px -2px 11px #899bc1;
+  }
+  
+  .button:hover{
+	opacity: 0.8;
+}
+
+.myButton {
+	-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+	background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+	background-color:#7892c2;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:12px ;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+	text-align:center;
+	width: 100%;
+	
+	
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+	background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
+	background-color:#476e9e;
+	text-decoration:none;
+}
+.myButton:active {
+    
+	position:relative;
+	top:1px;
+	
+}
+</style>
+</head>
+<body>
+	<div class="header box css3-shadow" id="head">
+ 	<div class="container">
+	  <div class="header-top">
+	        <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
+				<a href="index.html"><img width="40" src="images/logo.png" alt=""/></a><br>
+			 </div>
+			 
+			<div class="clearfix"> </div>
+			
+		  </div><!-- end header_main4 -->
+	</div>
+</div>
+<!--start-slider-->
+	
+<!--//end-slider-->
+	<div class ="contact-section">
+			<div class="container">
+			<div id="about" class="service-section">
+   
+<div class="container">
+
+<div style="display:none" class="row">
+    <div id="page1" class="col-xs-12">
+	<p><strong>1.</strong> Angka berapa yang anda lihat ? </p>
+	<img src="plat/p1.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat1" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> 12 	 </span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat1" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> 15</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+<div style="display:none" class="row">
+    <div id="page2" class="col-xs-12">
+	<p><strong>2.</strong> Angka berapa yang anda lihat ? </p>
+	<img src="plat/p2.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat2" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>8</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat2" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>3</span>
+        </label>
+		 <label class="btn">
+          <input type="radio"  name="plat2" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+<div style="display:none" class="row">
+    <div id="page3" class="col-xs-12">
+	<p><strong>3.</strong> Angka berapa yang anda lihat ? </p>
+	<img src="plat/p3.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat3" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>6</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat3" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>5</span>
+        </label>
+		 <label class="btn">
+          <input type="radio"  name="plat3" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+<div style="display:none" class="row">
+    <div id="page4" class="col-xs-12">
+	<p><strong>4.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p4.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat4" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i cglass="fa fa-check-circle-o fa-2x"></i> <span>29</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat4" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>70</span>
+        </label>
+		 <label class="btn">
+          <input type="radio"  name="plat4" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+<div style="display:none" class="row">
+    <div id="page5" class="col-xs-12">
+	<p><strong>5.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p5.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat5" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>57</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat5" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>35</span>
+        </label>
+		 <label class="btn">
+          <input type="radio"  name="plat5" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+    <div style="display:none" class="row">
+    <div id="page6" class="col-xs-12">
+	<p><strong>6.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p6.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat6" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>5</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat6" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>2</span>
+        </label>
+		 <label class="btn">
+          <input type="radio"  name="plat6" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+    <div style="display:none" class="row">
+    <div id="page7" class="col-xs-12">
+	<p><strong>7.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p7.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat7" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>3</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat7" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>5</span>
+        </label>
+		 <label class="btn">
+          <input type="radio"  name="plat7" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+    <div style="display:none" class="row">
+    <div id="page8" class="col-xs-12">
+	<p><strong>8.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p8.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat8" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>15</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat8" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>17</span>
+        </label>
+		 <label class="btn">
+          <input type="radio"  name="plat8" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+    <div style="display:none" class="row">
+    <div id="page9" class="col-xs-12">
+	<p><strong>9.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p9.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat9" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>74</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat9" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>21</span>
+        </label>
+		 <label class="btn">
+          <input type="radio"  name="plat9" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+    <div style="display:none" class="row">
+    <div id="page10" class="col-xs-12">
+	<p><strong>10.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p10.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat10" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>2</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat10" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>7</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+      <div style="display:none" class="row">
+    <div id="page11" class="col-xs-12">
+	<p><strong>11.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p11.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat11" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>6</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat11" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>8</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+      <div style="display:none" class="row">
+    <div id="page12" class="col-xs-12">
+	<p><strong>12.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p12.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat12" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>97</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat12" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>67</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+      <div style="display:none" class="row">
+    <div id="page13" class="col-xs-12">
+	<p><strong>13.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p13.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat13" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>45</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat13" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>95</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+      <div style="display:none" class="row">
+    <div id="page14" class="col-xs-12">
+	<p><strong>14.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p14.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat14" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>5</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat14" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page15" class="col-xs-12">
+	<p><strong>15.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p15.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat15" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>7</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat15" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page16" class="col-xs-12">
+	<p><strong>16.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p14.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat16" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>16</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat16" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page17" class="col-xs-12">
+	<p><strong>17.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p17.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat17" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>73</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat17" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Terbaca </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page18" class="col-xs-12">
+	<p><strong>18.</strong> Apa yang kamu lihat ? </p>
+	<img src="plat/p18.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat18" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Tidak Terbaca Sama Sekali </span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat18" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>5</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat18" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Terbaca Apapun</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page19" class="col-xs-12">
+	<p><strong>19.</strong> Apa yang kamu lihat ? </p>
+	<img src="plat/p19.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat19" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Tidak Terbaca Sama Sekali </span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat19" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>2</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat19" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Terbaca Apapun</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page20" class="col-xs-12">
+	<p><strong>20.</strong> Apa yang kamu lihat ? </p>
+	<img src="plat/p20.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat20" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Tidak Terbaca Sama Sekali </span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat20" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>45</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat20" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Terbaca Apapun</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page21" class="col-xs-12">
+	<p><strong>21.</strong> Apa yang kamu lihat ? </p>
+	<img src="plat/p21.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat21" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Tidak Terbaca Sama Sekali </span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat21" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>73</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat21" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Terbaca Apapun</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page22" class="col-xs-12">
+	<p><strong>22.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p22.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat22" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>26</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat22" onclick="javascript:test_plat();" value="5" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>6</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat22" onclick="javascript:test_plat();" value="7" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>2</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page23" class="col-xs-12">
+	<p><strong>23.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p23.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat23" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>42</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat23" onclick="javascript:test_plat();" value="5" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>2</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat23" onclick="javascript:test_plat();" value="7" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>4</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page24" class="col-xs-12">
+	<p><strong>24.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p24.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat24" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>35</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat24" onclick="javascript:test_plat();" value="5" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>5</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat24" onclick="javascript:test_plat();" value="7" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>3</span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+        <div style="display:none" class="row">
+    <div id="page25" class="col-xs-12">
+	<p><strong>25.</strong> Angka berapa yang kamu lihat ? </p>
+	<img src="plat/p25.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat25" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>96</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat25" onclick="javascript:test_plat();" value="5" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>6</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat25" onclick="javascript:test_plat();" value="7" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>9</span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+        <div style="display:none" class="row">
+    <div id="page26" class="col-xs-12">
+	<p><strong>26.</strong> Garis warna apa yang kamu lihat ? </p>
+	<img src="plat/p26.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat26" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Ungu dan Merah</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat26" onclick="javascript:test_plat();" value="5" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Ungu</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat26" onclick="javascript:test_plat();" value="8" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Merah</span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+        <div style="display:none" class="row">
+    <div id="page27" class="col-xs-12">
+	<p><strong>27.</strong> Garis warna apa yang kamu lihat ? </p>
+	<img src="plat/p27.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat27" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Ungu dan Merah</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat27" onclick="javascript:test_plat();" value="5" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Ungu</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat27" onclick="javascript:test_plat();" value="8" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Merah</span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+        <div style="display:none" class="row">
+    <div id="page28" class="col-xs-12">
+	<p><strong>28.</strong> Adakah garis pada gambar ini ? </p>
+	<img src="plat/p28.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat28" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Tidak Ada</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat28" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Ada</span>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page29" class="col-xs-12">
+	<p><strong>29.</strong> Adakah garis pada gambar ini ? </p>
+	<img src="plat/p29.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat29" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Tidak Ada</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat29" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Ada</span>
+      </div>
+    </div>
+  </div>
+  
+        <div style="display:none" class="row">
+    <div id="page30" class="col-xs-12">
+	<p><strong>30.</strong> Garis warna apa yang kamu lihat ? </p>
+	<img src="plat/p30.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat30" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Hijau Kebiru-biruan</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat30" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Ada Garis atau Samar-Samar</span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+        <div style="display:none" class="row">
+    <div id="page31" class="col-xs-12">
+	<p><strong>31.</strong> Garis warna apa yang kamu lihat ? </p>
+	<img src="plat/p31.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat31" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Hijau Kebiru-biruan</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat31" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Ada Garis atau Samar-Samar</span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+        <div style="display:none" class="row">
+    <div id="page32" class="col-xs-12">
+	<p><strong>32.</strong> Garis warna apa yang kamu lihat ? </p>
+	<img src="plat/p32.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat32" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Orange</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat32" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Ada Garis atau Samar-Samar</span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+        <div style="display:none" class="row">
+    <div id="page33" class="col-xs-12">
+	<p><strong>33.</strong> Garis warna apa yang kamu lihat ? </p>
+	<img src="plat/p33.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat33" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Orange</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat33" onclick="javascript:test_plat();" value="4" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Ada Garis atau Samar-Samar</span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+        <div style="display:none" class="row">
+    <div id="page34" class="col-xs-12">
+	<p><strong>34.</strong> Garis warna apa yang kamu lihat ? </p>
+	<img src="plat/p34.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat34" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Hijau Kebiru-biruan dan Hijau Kekuning-kuningan</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat34" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Hijau Kebiru-biruan dengan Ungu</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat34" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Ada Garis</span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+        <div style="display:none" class="row">
+    <div id="page35" class="col-xs-12">
+	<p><strong>35.</strong> Garis warna apa yang kamu lihat ? </p>
+	<img src="plat/p35.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat35" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Hijau Kebiru-biruan dan Hijau Kekuning-kuningan</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat35" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Hijau Kebiru-biruan dengan Ungu</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat35" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Ada Garis</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+        <div style="display:none" class="row">
+    <div id="page36" class="col-xs-12">
+	<p><strong>36.</strong> Garis warna apa yang kamu lihat ? </p>
+	<img src="plat/p36.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat36" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Ungu dan Orange</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat36" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Ungu dan Hijau Kebiru-biruan</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat36" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Ada Garis</span>
+        </label>
+      </div>
+    </div>
+  </div>  
+  
+        <div style="display:none" class="row">
+    <div id="page37" class="col-xs-12">
+	<p><strong>37.</strong> Garis warna apa yang kamu lihat ? </p>
+	<img src="plat/p37.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat37" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span>Ungu dan Orange</span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat37" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Ungu dan Hijau Kebiru-biruan</span>
+        </label>
+		<label class="btn">
+          <input type="radio"  name="plat37" onclick="javascript:test_plat();" value="3" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span>Tidak Ada Garis</span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+        <div style="display:none" class="row">
+    <div id="page38" class="col-xs-12">
+	<p><strong>38.</strong> Garis warna apa yang kamu lihat ? </p>
+	<img src="plat/p38.jpg" width="140" />
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name="plat38" onclick="javascript:test_plat();" value="1" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i> <span> Ada </span>
+        </label>
+        <label class="btn">
+          <input type="radio"  name="plat38" onclick="javascript:test_plat();" value="2" >
+		  <i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Tidak Ada </span>
+        </label>
+      </div>
+    </div>
+  </div> 
+  
+  <div style="display:none" class="row">
+    <div id="page39" class="col-xs-12">
+     <a href="#" onclick="hasil()" class="myButton">Diagnosa Penyakit</a> <br>	<br>
+	 <a href="#" onclick="location.reload()" class="myButton">Ulangi</a>
+    </div>
+	
+
+  </div>
+  
+  
+				<div id="content" class="row">
+				<a href="#" onclick="start()" class="myButton">Mulai</a>
+				</div>	 
+				
+                <div id="page-selection" style="display:none"></div>
+		
+
+
+    </div>
+	
+	
+   
+   <div id="box" class=" wow zoomInRight animated" style="border-radius: 0px;border: 2px solid #3498db;width: 100%;display:none ">
+   <p style="margin-left:10px" id="hasil"></p>
+   </div>
+
+    
+
+    
+</div>
+							
+				</div>
+			</div>
+			<!--/start-copyright-section-->
+			
+			
+			<!--//end-copyright-section-->
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+	
+     <script>
+
+        $('#page-selection').bootpag({
+            total: 39,
+			page: 1,
+            maxVisible: 4,
+			leaps: false,
+            next: 'Lanjut'
+        }).on("page", function(event, num){
+             $("#content").html($('#page' + num).html()); // some ajax content loading...
+			 
+			
+        });
+		
+		function start(){
+		
+		 $("#content").html($('#page1').html());
+		 var page_selection = document.getElementById('page-selection');
+           page_selection.style.display = (page_selection.style.display != 'none') ? 'visible' : '';
+		
+		}
+    </script>		
+</body>
+</html>
